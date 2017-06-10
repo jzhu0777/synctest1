@@ -11,10 +11,10 @@ import (
 )
 
 func main() {
-	n := 0
+	n := 10000
 	var cmd = ""
 	fmt.Println("start")
-	for n < 10000 {
+	for n < 20000 {
 
 		cmd = "echo hello > ./" + strconv.Itoa(n) + ".txt"
 		_ = RunCMD(cmd)
